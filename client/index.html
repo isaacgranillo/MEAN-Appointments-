@@ -1,0 +1,20 @@
+<html ng-app='appointmentsApp'>
+<head>
+	<title>Appointments</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src='javascripts/app.js'></script>
+    <script src='javascripts/controllers/appts_controller.js'></script>
+    <script src='javascripts/factories/appt_factory.js'></script>
+   
+</head>
+<body>
+
+	<div ng-controller='AppointmentsController as appointmentsCtrl'>
+
+		<div ng-view=""></div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<h1>Appointments</h1>
+
+<a href="/">Logout</a><br><br>
+
+<input type='text' placeholder='Search' ng-model='filter_appointment'><br><br>
+
+<table border='1 px'>
+	<tr>
+		<th>Date</th>
+		<th>Time</th>
+		<th>Patient Name</th>
+		<th>Complaint</th>
+		<th>Cancel Appointment</th>
+	</tr>
+	<tr ng-repeat='appointment in appointmentsCtrl.appointments | filter:filter_appointment | orderBy: "date"'>
+		<td><span ng-bind='appointment.date | date: "longDate"'></span></td>
+		<td><span ng-bind='appointment.time'></span></td>
+		<td><span ng-bind='appointment.name'></span></td>
+		<td><span ng-bind='appointment.complaint'></span></td>
+		<td><button ng-click='appointmentsCtrl.removeAppt(appointment._id, appointment.name, appointment.date)'>Cancel</button></td>
+	</tr>
+
+</table><br><br>
+
+<button><a href="#/new">Add New Appointment</a></button>
