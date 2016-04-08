@@ -1,5 +1,5 @@
-<h1>New Appointment</h1>
-<a href="/">Logout</a>
+<h1>Add New Appointment</h1>
+<a href="/" class= "logout">Logout</a>
 
 <form name='appointmentsCtrl.apptForm'>
 
@@ -21,8 +21,8 @@
 	<br><br>
 
 
-	Date: <input type='date' name='date' ng-model='appointmentsCtrl.newAppt.date' ng-required='true'>
-	Time: <select ng-model='appointmentsCtrl.newAppt.time'>
+	Date: <input class='input' type='date' name='date' ng-model='appointmentsCtrl.newAppt.date' ng-required='true'>
+	Time: <select class= 'time' ng-model='appointmentsCtrl.newAppt.time'>
 			<option>8:00 AM</option>
 			<option>8:30 AM</option>
 			<option>9:00 AM</option>
@@ -43,8 +43,8 @@
 			<option>4:30 PM</option>
 			<option>5:00 PM </option>
 		</select><br><br>
-	Complaint: <input type='text' name='complaint' ng-model='appointmentsCtrl.newAppt.complaint' ng-required='true' ng-minlength='10'><br><br>
-	<button><a href="#/appointments">Cancel</a></button>
-	<input type='submit' value='Add Appointment' ng-click='appointmentsCtrl.addAppt(appointmentsCtrl.newAppt)'>
+	Issue: <input class= 'input' type='text' name='complaint' ng-model='appointmentsCtrl.newAppt.complaint' ng-required='true' ng-minlength='10'><br><br>
+	<button><a href="#/appointments" class="button">Cancel</a></button>
+	<button><input class="add" type='submit' value='Add Appointment' ng-click='appointmentsCtrl.addAppt(appointmentsCtrl.newAppt)'></button>
 
 </form>
