@@ -19,14 +19,15 @@ h1{
 }
 
 table{
-	border: 1px solid black;
+	border: 1px solid #182b3f;
 	background-color: white;
 }
 
 tr, th, td{
 	text-align: center;
 	padding: 10px;
-	border: 1px solid black;
+	border: 1px solid #182b3f;
+	color: #182b3f;
 }
 
 th{
@@ -36,6 +37,11 @@ th{
 a{
 	text-decoration: none;
 	font-size: 15px;
+	border: none;
+}
+
+form{
+	color: #182b3f;
 }
 
 .logout{
@@ -46,19 +52,24 @@ a{
 }
 
 .button{
-	color: black;
+	color: #182b3f;
 	font-weight: bold;
 	font-size: 12px;
+	background-color: #eaedfc;
+	border: 1px solid black;
+
 }
 
 button{
 	padding: 10px;
+	background-color: #eaedfc;
+    border: 1px solid #182b3f;
 }
 
 .add{
 	border: none;
 	background-color: #ffffff;
-	color: black;
+	color: #182b3f;
 	font-weight: bold;
 	font-size: 12px;
 }
@@ -67,6 +78,9 @@ button{
 	padding: 5px;
 }
 
+a.button {
+	border: none;
+}
 
 
 
